@@ -1,9 +1,10 @@
 // main.cpp
 
-#include <stdio.h>
+#include "../include/Storyteller.h"
 
 int main(int argc, char** arcv) {
-    printf("Hello world!\n");
-    
+    Storyteller *storyteller = new Storyteller();
+    storyteller->startStory();
+
     return 0;
 }
