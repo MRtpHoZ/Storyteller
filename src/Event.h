@@ -1,0 +1,3 @@
+/* Class Event
+    Event can be a conversation or an enemy battle. Result of an Event depends on players choices.
+*/
