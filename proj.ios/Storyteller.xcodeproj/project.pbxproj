@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6961DB4C2B500752085 /* Storyteller.cpp */; };
 		ECEDD69A1DB4C32800752085 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6941DB4C2B500752085 /* main.cpp */; };
+		ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD69B1DB4D3D700752085 /* Scene.cpp */; };
+		ECEDD6A81DB4DE2300752085 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDD6A51DB4DE2300752085 /* liblua.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,13 @@
 		ECEDD6951DB4C2B500752085 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		ECEDD6961DB4C2B500752085 /* Storyteller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Storyteller.cpp; sourceTree = "<group>"; };
 		ECEDD6971DB4C2B500752085 /* Storyteller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storyteller.h; sourceTree = "<group>"; };
+		ECEDD69B1DB4D3D700752085 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		ECEDD69F1DB4DE2300752085 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		ECEDD6A01DB4DE2300752085 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		ECEDD6A11DB4DE2300752085 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		ECEDD6A21DB4DE2300752085 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		ECEDD6A31DB4DE2300752085 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		ECEDD6A51DB4DE2300752085 /* liblua.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblua.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEDD6A81DB4DE2300752085 /* liblua.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +57,7 @@
 		ECEDD67C1DB4C06000752085 = {
 			isa = PBXGroup;
 			children = (
+				ECEDD69D1DB4DE2300752085 /* lua */,
 				ECEDD6911DB4C2B500752085 /* src */,
 				ECEDD6891DB4C0F000752085 /* Products */,
 			);
@@ -69,9 +80,56 @@
 				ECEDD6951DB4C2B500752085 /* Scene.h */,
 				ECEDD6961DB4C2B500752085 /* Storyteller.cpp */,
 				ECEDD6971DB4C2B500752085 /* Storyteller.h */,
+				ECEDD69B1DB4D3D700752085 /* Scene.cpp */,
 			);
 			name = src;
 			path = ../src;
+			sourceTree = "<group>";
+		};
+		ECEDD69D1DB4DE2300752085 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				ECEDD69E1DB4DE2300752085 /* include */,
+				ECEDD6A41DB4DE2300752085 /* lib */,
+			);
+			name = lua;
+			path = ../lua;
+			sourceTree = "<group>";
+		};
+		ECEDD69E1DB4DE2300752085 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ECEDD69F1DB4DE2300752085 /* lauxlib.h */,
+				ECEDD6A01DB4DE2300752085 /* lua.h */,
+				ECEDD6A11DB4DE2300752085 /* lua.hpp */,
+				ECEDD6A21DB4DE2300752085 /* luaconf.h */,
+				ECEDD6A31DB4DE2300752085 /* lualib.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		ECEDD6A41DB4DE2300752085 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				ECEDD6A51DB4DE2300752085 /* liblua.a */,
+				ECEDD6A61DB4DE2300752085 /* lua */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		ECEDD6A61DB4DE2300752085 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				ECEDD6A71DB4DE2300752085 /* 5.3 */,
+			);
+			path = lua;
+			sourceTree = "<group>";
+		};
+		ECEDD6A71DB4DE2300752085 /* 5.3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 5.3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */,
 				ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */,
 				ECEDD69A1DB4C32800752085 /* main.cpp in Sources */,
 			);
@@ -251,6 +310,7 @@
 				ECEDD68F1DB4C0F000752085 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

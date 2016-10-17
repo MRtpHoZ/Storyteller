@@ -6,9 +6,9 @@
 #define __Storyteller_h__
 
 #include "common.h"
+#include "Scene.h"
 
-class Storyteller 
-{
+class Storyteller {
 public:
     Storyteller();
     ~Storyteller();
@@ -18,6 +18,8 @@ public:
 private:
     bool describe(); // ask the Storyteller to describe the situation right now.
     void choose(int choice); // input Player's choice on current situation.
+    
+    Scene* _currentScene;
 };
 
 #endif

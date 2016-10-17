@@ -7,7 +7,7 @@ CC = llvm-g++
 CFLAGS = -Wall -g
 
 # defines any directories containing header files other than /usr/include
-INCLUDES = -I./include
+INCLUDES = -I./src
 
 # defines library paths in addition to /usr/lib 
 # LFLAGS = -L./lua

@@ -1,6 +1,7 @@
 #include "Storyteller.h"
 
-Storyteller::Storyteller() {
+Storyteller::Storyteller()
+: _currentScene(nullptr) {
 
 }
 
@@ -9,5 +10,11 @@ Storyteller::~Storyteller() {
 }
 
 void Storyteller::startStory() {
-    cout << "Here\'s the story..." << endl;
+    if (_currentScene == nullptr) {
+        _currentScene = new Scene();
+    }
+    
+    while (!_currentScene->isSceneEnded()) {
+        
+    }
 }
