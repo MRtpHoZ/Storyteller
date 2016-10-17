@@ -1,4 +1,4 @@
-#include "../include/Storyteller.h"
+#include "Storyteller.h"
 
 Storyteller::Storyteller() {
 
