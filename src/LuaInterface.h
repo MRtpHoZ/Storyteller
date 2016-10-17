@@ -9,13 +9,23 @@
 #ifndef LuaInterface_h
 #define LuaInterface_h
 
-#include "lua.hpp"
+#include "../lua/include/lua.hpp"
 #include "common.h"
 
-void print_error(lua_State* state);
+class LuaInterface {
+public:
+    LuaInterface();
+    ~LuaInterface();
 
-void execute(const char* filename);
+    static LuaInterface* getInstance();
 
+    void print_error(lua_State* state);
 
+private:
+    void execute(const char* filename);
+
+    static LuaInterface* _instance;
+    lua_State* _state;
+};
 
 #endif /* LuaInterface_h */

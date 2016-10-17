@@ -8,14 +8,31 @@
 
 #include "LuaInterface.h"
 
+LuaInterface* LuaInterface::_instance = nullptr;
 
-void print_error(lua_State* state) {
+LuaInterface::LuaInterface() {
+    execute("resource/script/global.lua");
+}
+
+LuaInterface::~LuaInterface() {
+
+}
+
+LuaInterface* LuaInterface::getInstance() {
+    if (_instance == nullptr) {
+        _instance = new LuaInterface();
+    }
+
+    return _instance;
+}
+
+void LuaInterface::print_error(lua_State* state) {
     const char* message = lua_tostring(state, -1);
     puts(message);
     lua_pop(state, 1);
 }
 
-void execute(const char* filename) {
+void LuaInterface::execute(const char* filename) {
     lua_State *state = luaL_newstate();
     luaL_openlibs(state);
     int result;
@@ -31,5 +48,7 @@ void execute(const char* filename) {
         print_error(state);
         return;
     }
+
+    _state = state;
 }
 

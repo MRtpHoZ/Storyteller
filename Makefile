@@ -10,13 +10,13 @@ CFLAGS = -Wall -g
 INCLUDES = -I./src
 
 # defines library paths in addition to /usr/lib 
-# LFLAGS = -L./lua
+LFLAGS = -L./lua/lib/
 
 # defines any libraries to link into executable
-# LIBS = -llua
+LIBS = -llua
 
 # defines the C++ source files 
-SRCS = src/main.cpp src/Storyteller.cpp
+SRCS = src/Storyteller.cpp src/Event.cpp src/LuaInterface.cpp src/Scene.cpp src/main.cpp
 
 # defines the C++ object files
 OBJS = $(SRCS:.cpp=.o)
@@ -44,5 +44,3 @@ depend: $(SRCS)
 
 # DO NOT DELETE THIS LINE -- make depend needs it
 
-src/main.o: include/Storyteller.h include/common.h
-src/Storyteller.o: include/Storyteller.h include/common.h

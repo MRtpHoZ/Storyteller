@@ -14,7 +14,7 @@ void Storyteller::startStory() {
         _currentScene = new Scene();
     }
     
-    execute("resource/script/global.lua");
+    LuaInterface::getInstance();
     
     while (!_currentScene->isSceneEnded()) {
         
