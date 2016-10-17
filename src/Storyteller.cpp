@@ -14,7 +14,11 @@ void Storyteller::startStory() {
         _currentScene = new Scene();
     }
     
+    execute("resource/script/global.lua");
+    
     while (!_currentScene->isSceneEnded()) {
         
     }
+    
+    puts("Story ends here.");
 }

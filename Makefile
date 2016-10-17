@@ -22,7 +22,7 @@ SRCS = src/main.cpp src/Storyteller.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 # the build target executable
-TARGET = ./storyteller 
+TARGET = ./Storyteller 
 
 # defines fake targets
 .PHONY: depend clean 

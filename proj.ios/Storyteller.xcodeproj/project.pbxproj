@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342161A81DB5126A00A3ADC5 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342161A71DB5126A00A3ADC5 /* Event.cpp */; };
+		342161AB1DB51BF800A3ADC5 /* LuaInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */; };
 		ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6961DB4C2B500752085 /* Storyteller.cpp */; };
 		ECEDD69A1DB4C32800752085 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6941DB4C2B500752085 /* main.cpp */; };
 		ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD69B1DB4D3D700752085 /* Scene.cpp */; };
-		ECEDD6A81DB4DE2300752085 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDD6A51DB4DE2300752085 /* liblua.a */; };
+		ECEDD6A81DB4DE2300752085 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDD6A51DB4DE2300752085 /* liblua.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +28,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		ECEDD6881DB4C0F000752085 /* Storyteller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Storyteller; sourceTree = BUILT_PRODUCTS_DIR; };
+		342161A71DB5126A00A3ADC5 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		342161A91DB512EF00A3ADC5 /* LuaInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaInterface.h; sourceTree = "<group>"; };
+		342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LuaInterface.cpp; sourceTree = "<group>"; };
+		342161C51DB5203F00A3ADC5 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; name = script; path = ../resource/script; sourceTree = "<group>"; };
+		342161C71DB5291E00A3ADC5 /* Storyteller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Storyteller; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEDD6921DB4C2B500752085 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		ECEDD6931DB4C2B500752085 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		ECEDD6941DB4C2B500752085 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -54,21 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		342161C41DB5200700A3ADC5 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				342161C51DB5203F00A3ADC5 /* script */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
 		ECEDD67C1DB4C06000752085 = {
 			isa = PBXGroup;
 			children = (
 				ECEDD69D1DB4DE2300752085 /* lua */,
 				ECEDD6911DB4C2B500752085 /* src */,
-				ECEDD6891DB4C0F000752085 /* Products */,
+				342161C41DB5200700A3ADC5 /* resource */,
+				342161C71DB5291E00A3ADC5 /* Storyteller */,
 			);
-			sourceTree = "<group>";
-		};
-		ECEDD6891DB4C0F000752085 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ECEDD6881DB4C0F000752085 /* Storyteller */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		ECEDD6911DB4C2B500752085 /* src */ = {
@@ -81,6 +88,9 @@
 				ECEDD6961DB4C2B500752085 /* Storyteller.cpp */,
 				ECEDD6971DB4C2B500752085 /* Storyteller.h */,
 				ECEDD69B1DB4D3D700752085 /* Scene.cpp */,
+				342161A71DB5126A00A3ADC5 /* Event.cpp */,
+				342161A91DB512EF00A3ADC5 /* LuaInterface.h */,
+				342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */,
 			);
 			name = src;
 			path = ../src;
@@ -149,7 +159,7 @@
 			);
 			name = Storyteller;
 			productName = Storyteller;
-			productReference = ECEDD6881DB4C0F000752085 /* Storyteller */;
+			productReference = 342161C71DB5291E00A3ADC5 /* Storyteller */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +183,7 @@
 				en,
 			);
 			mainGroup = ECEDD67C1DB4C06000752085;
-			productRefGroup = ECEDD6891DB4C0F000752085 /* Products */;
+			productRefGroup = ECEDD67C1DB4C06000752085;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -187,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342161A81DB5126A00A3ADC5 /* Event.cpp in Sources */,
 				ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */,
 				ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */,
+				342161AB1DB51BF800A3ADC5 /* LuaInterface.cpp in Sources */,
 				ECEDD69A1DB4C32800752085 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +239,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(BUILD_DIR)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -245,11 +260,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = ../lua/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -272,8 +289,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(BUILD_DIR)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -284,10 +304,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = ../lua/lib/;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SYMROOT = build;
 			};
 			name = Release;
 		};

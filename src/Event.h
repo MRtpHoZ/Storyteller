@@ -5,6 +5,8 @@
 #ifndef __Event_h__
 #define __Event_h__
 
+#include "LuaInterface.h"
+
 class Event {
 public:
     Event();

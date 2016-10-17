@@ -17,7 +17,7 @@ Scene::~Scene() {
 }
 
 bool Scene::isSceneEnded() {
-    return false;
+    return true;
 }
 
 void Scene::runATurn() {

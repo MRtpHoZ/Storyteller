@@ -1,4 +1,4 @@
 storyteller
 src/*.o
 *.bak
-
+*.build
