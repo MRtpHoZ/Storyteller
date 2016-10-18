@@ -16,7 +16,7 @@ LFLAGS = -L./lua/lib/
 LIBS = -llua
 
 # defines the C++ source files 
-SRCS = src/Storyteller.cpp src/Event.cpp src/LuaInterface.cpp src/Scene.cpp src/main.cpp
+SRCS = src/Storyteller.cpp src/LuaInterface.cpp src/main.cpp
 
 # defines the C++ object files
 OBJS = $(SRCS:.cpp=.o)

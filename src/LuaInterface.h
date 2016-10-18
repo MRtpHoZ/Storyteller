@@ -18,14 +18,21 @@ public:
     ~LuaInterface();
 
     static LuaInterface* getInstance();
-
-    void print_error(lua_State* state);
+    static void removeInstance();
+    
+    void addGlobalVariable(const char *variableName, lua_Number n);
+    lua_Number getGlobalVariable(const char *variableName);
+    
+    string describeCurrentState();
+    bool isStoryEnd();
+    string choose(int choice);
 
 private:
     void execute(const char* filename);
+    void print_error(lua_State* state);
 
     static LuaInterface* _instance;
-    lua_State* _state;
+    lua_State *_state;
 };
 
 #endif /* LuaInterface_h */

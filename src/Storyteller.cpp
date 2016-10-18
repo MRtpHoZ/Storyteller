@@ -1,7 +1,7 @@
 #include "Storyteller.h"
+#include "LuaInterface.h"
 
-Storyteller::Storyteller()
-: _currentScene(nullptr) {
+Storyteller::Storyteller() {
 
 }
 
@@ -10,15 +10,22 @@ Storyteller::~Storyteller() {
 }
 
 void Storyteller::startStory() {
-    if (_currentScene == nullptr) {
-        _currentScene = new Scene();
-    }
-    
-    LuaInterface::getInstance();
-    
-    while (!_currentScene->isSceneEnded()) {
+    do {
+        describe(LuaInterface::getInstance()->describeCurrentState());
         
-    }
+        int ret;
+        cin >> ret;
+        choose(ret);
+    } while (!LuaInterface::getInstance()->isStoryEnd());
     
+    LuaInterface::removeInstance();
     puts("Story ends here.");
+}
+
+void Storyteller::describe(string text) {
+    puts(text.c_str());
+}
+
+void Storyteller::choose(int choice) {
+    describe(LuaInterface::getInstance()->choose(choice));
 }

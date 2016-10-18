@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		342161A81DB5126A00A3ADC5 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342161A71DB5126A00A3ADC5 /* Event.cpp */; };
 		342161AB1DB51BF800A3ADC5 /* LuaInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */; };
 		ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6961DB4C2B500752085 /* Storyteller.cpp */; };
 		ECEDD69A1DB4C32800752085 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD6941DB4C2B500752085 /* main.cpp */; };
-		ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECEDD69B1DB4D3D700752085 /* Scene.cpp */; };
 		ECEDD6A81DB4DE2300752085 /* liblua.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDD6A51DB4DE2300752085 /* liblua.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,18 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		342161A71DB5126A00A3ADC5 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		342161A91DB512EF00A3ADC5 /* LuaInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaInterface.h; sourceTree = "<group>"; };
 		342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LuaInterface.cpp; sourceTree = "<group>"; };
 		342161C51DB5203F00A3ADC5 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; name = script; path = ../resource/script; sourceTree = "<group>"; };
 		342161C71DB5291E00A3ADC5 /* Storyteller */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Storyteller; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEDD6921DB4C2B500752085 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		ECEDD6931DB4C2B500752085 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		ECEDD6941DB4C2B500752085 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		ECEDD6951DB4C2B500752085 /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
 		ECEDD6961DB4C2B500752085 /* Storyteller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Storyteller.cpp; sourceTree = "<group>"; };
 		ECEDD6971DB4C2B500752085 /* Storyteller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storyteller.h; sourceTree = "<group>"; };
-		ECEDD69B1DB4D3D700752085 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
 		ECEDD69F1DB4DE2300752085 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
 		ECEDD6A01DB4DE2300752085 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		ECEDD6A11DB4DE2300752085 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
@@ -82,13 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				ECEDD6921DB4C2B500752085 /* common.h */,
-				ECEDD6931DB4C2B500752085 /* Event.h */,
 				ECEDD6941DB4C2B500752085 /* main.cpp */,
-				ECEDD6951DB4C2B500752085 /* Scene.h */,
 				ECEDD6961DB4C2B500752085 /* Storyteller.cpp */,
 				ECEDD6971DB4C2B500752085 /* Storyteller.h */,
-				ECEDD69B1DB4D3D700752085 /* Scene.cpp */,
-				342161A71DB5126A00A3ADC5 /* Event.cpp */,
 				342161A91DB512EF00A3ADC5 /* LuaInterface.h */,
 				342161AA1DB51BF800A3ADC5 /* LuaInterface.cpp */,
 			);
@@ -197,8 +187,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				342161A81DB5126A00A3ADC5 /* Event.cpp in Sources */,
-				ECEDD69C1DB4D3D700752085 /* Scene.cpp in Sources */,
 				ECEDD6991DB4C2B500752085 /* Storyteller.cpp in Sources */,
 				342161AB1DB51BF800A3ADC5 /* LuaInterface.cpp in Sources */,
 				ECEDD69A1DB4C32800752085 /* main.cpp in Sources */,
