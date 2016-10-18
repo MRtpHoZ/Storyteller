@@ -3,6 +3,8 @@
 - deciding the next state based on current state and player's choice, and giving description
 --]]
 
+package.path = package.path .. ";./resource/script/?.lua"
+
 function log(str)
     io.write(string.format("LuaLog: %s\n", str))
 end
@@ -11,22 +13,27 @@ log(string.format("Version: %s\n", _VERSION))
 
 function loadEvents()
     moduleList = {}
-    for moduleName in moduleNameList do
-        moduleList[moduleName] = require moduleName
+    for i = 1, #moduleNameList do
+        moduleName = moduleNameList[i]
+        print("Load module " .. moduleName)
+        moduleList[moduleName] = require(moduleName)
     end
+
+    currentEvent = moduleList[moduleNameList[1]]
 end
 
 function describeCurrentState()
-    return "Current situation is complicated."
+    return currentEvent.describeCurrentState()
 end
 
 function isStoryEnd()
-    return true
+    return currentEvent.nextModuleName() == "end"
 end
 
 function choose(choice)
-    return "Your choice is " .. choice .. ", What did you mean by that?"
+    return currentEvent.choose(choice)
 end
 
 moduleNameList = {"guard"}
 loadEvents()
+
