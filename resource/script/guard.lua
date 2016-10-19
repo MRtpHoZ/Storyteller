@@ -1,34 +1,38 @@
-local guard = {}
+local event = require("event")
+
+local guard = event:new()
 
 guard.NAME = "guard"
 
 guard.state = "init"
 
-function guard.describeCurrentState()
-    if guard.state == "init" then
-        return [[Hey, what are you doing here?
-1. I don't know. Why don't you tell me.
-2. I'm here to take what's mine.]]
-    end
-end
-
-function guard.nextModuleName()
-    return "end"
-end
-
-function guard.choose(choice)
-    choice = math.floor(choice)
-    if guard.state == "init" then
-        if choice == 1 then
-            guard.state = "battle"
-            return [[Errr... Whatever reason, you shall not pass!]]
-        elseif choice == 2 then
-            guard.state = "battle"
-            return [[Naive!]]
-        else 
-            return [[Invalid choice]]
-        end
-    end
-end
+guard.script = {
+    ["init"] = {
+        ["description"] = [[Greetings!
+1. Greetings, I think you block my way through...
+2. ...(Say nothing)]],
+        ["1"] = {
+            ["react"] = [[(The guard looks at you suspiciously.)]],
+            ["nextState"] = "battle",
+        },
+        ["2"] = {
+            ["react"] = [[Looks like it's a silent lamb, huh?]],
+            ["nextState"] = "battle",
+        },
+    },
+    ["battle"] = {
+        ["description"] = [[The guard pulls out his sword and smile: "Say goodbye to the world!"
+1. Defend. 
+2. Attack]],
+        ["1"] = {
+            ["react"] = [[Guard's sword breaks your defence, you bleed to death...]],
+            ["nextState"] = "end",
+        },
+        ["2"] = {
+            ["react"] = [[The guard dodged your attack and cuts your head off...]],
+            ["nextState"] = "end",
+        },
+    },
+}
 
 return guard

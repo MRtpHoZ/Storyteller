@@ -9,7 +9,7 @@ function log(str)
     io.write(string.format("LuaLog: %s\n", str))
 end
 
-log(string.format("Version: %s\n", _VERSION))
+log(string.format("Version: %s", _VERSION))
 
 function loadEvents()
     moduleList = {}
@@ -23,15 +23,15 @@ function loadEvents()
 end
 
 function describeCurrentState()
-    return currentEvent.describeCurrentState()
+    return currentEvent:describeCurrentState()
 end
 
 function isStoryEnd()
-    return currentEvent.nextModuleName() == "end"
+    return currentEvent:nextModuleName() == "end"
 end
 
 function choose(choice)
-    return currentEvent.choose(choice)
+    return currentEvent:choose(choice)
 end
 
 moduleNameList = {"guard"}
