@@ -29,8 +29,8 @@ guard.script = {
             ["nextState"] = "end",
         },
         ["2"] = {
-            ["react"] = [[The guard dodged your attack and cuts your head off...]],
-            ["nextState"] = "end",
+            ["react"] = [[You defeat the guard and walk on to your journey]],
+            ["nextState"] = "treasure",
         },
     },
 }

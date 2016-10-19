@@ -12,7 +12,7 @@ LuaInterface* LuaInterface::_instance = nullptr;
 
 LuaInterface::LuaInterface()
 : _state(nullptr) {
-    execute("resource/script/global.lua");
+    execute("./resource/script/global.lua");
 }
 
 LuaInterface::~LuaInterface() {

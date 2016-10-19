@@ -15,7 +15,7 @@ function loadEvents()
     moduleList = {}
     for i = 1, #moduleNameList do
         moduleName = moduleNameList[i]
-        print("Load module " .. moduleName)
+        -- print("Load module " .. moduleName)
         moduleList[moduleName] = require(moduleName)
     end
 
@@ -27,13 +27,18 @@ function describeCurrentState()
 end
 
 function isStoryEnd()
-    return currentEvent:nextModuleName() == "end"
+    if currentEvent:nextModuleName() == "end" then
+        return true
+    else
+        currentEvent = moduleList[currentEvent:nextModuleName()]
+    end
+    return false
 end
 
 function choose(choice)
     return currentEvent:choose(choice)
 end
 
-moduleNameList = {"guard"}
+moduleNameList = {"guard", "treasure"}
 loadEvents()
 

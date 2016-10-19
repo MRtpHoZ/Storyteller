@@ -14,8 +14,11 @@ void Storyteller::startStory() {
         describe(LuaInterface::getInstance()->describeCurrentState());
         
         int ret;
+        cout << "Your choice: ";
         cin >> ret;
         choose(ret);
+
+        puts("");
     } while (!LuaInterface::getInstance()->isStoryEnd());
     
     LuaInterface::removeInstance();
