@@ -39,6 +39,6 @@ function choose(choice)
     return currentEvent:choose(choice)
 end
 
-moduleNameList = {"guard", "treasure"}
+moduleNameList = {"firstMeet"}
 loadEvents()
 

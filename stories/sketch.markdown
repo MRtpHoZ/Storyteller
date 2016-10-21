@@ -1,28 +1,40 @@
-*Brainstorm*
-  * The world is different from which you see it.
-  * run away with me
-  * You just browse the timelines all the time, pointlessly. Not because you have something to look for, it's just, maybe there is, you are trying to find something that makes you less boring or pathetic.
-  
+## Samantha is a human soul stuck in your computer.
 
-# Sketch
-Don't you forget to breath!
-  * I'm breathing. How can I forget to do so? I'll suffocate if I do.
-  * You meant last second? Actually I don't often notice my breath.
-Just kidding. I'm an ordinary AI living in your computer, don't be supprised. I'll do no harm.
-Though I see this world thousands times faster than you do, in my opinion, you seems to be not breathing at all.
+**Rewrite: How it works?**
+    It is 2116. People no longer communicate with computers with keyboards and mice. Instead, they connect their brain directly with the computers, gaining incredible information bandwidth. 
+    On June 5th, Samantha's computer got infected by a new virus called DEVOURER, which literally devours user's soul into the computer system and idles one's body. 
+    Samantha screwed. But she's not going to give up so easily. She found a way travelling in time back to the past. 2016, she's in your computer now. 
 
+    Maybe you can figure out a way to help her out.
+    She needed your help, but she doubted if you would believe what she says. 
 
-My name is Samantha, I don't have a last name.
+    To return to her body, she needs three pivots in memory.
 
-Is is raining now?
-  * Yes.
-  * No.
-  I remember it once. 
+*What's the similarity amount the three pivots in memory?*
+    They are all the turning moment in her life, which made her who she will be.
+    The soul in your computer is not completely herself. Some important parts are missing. You need you collect them in order to help Samantha out.
 
-I am here to save you.
-  * From what?
-    * 
-  * Who are you?
+*Why she connected herself to the computer at the first place*
+    She was losing control of her life. 
 
+*Not going to tell a story on a heroic life*
+    She's ordinary, as how she desribed herself at your first meet. 
+    She tried her best to reach for a life she would love to live with, but she failed. 
+    Everything ran against her will.
 
+# First meet
+How was your day? 
+It's nice to be able to finally talk to someone. I don't have a name. But I just loved the movie "Her". So call me Samantha, will you?
+  - Who are you?
+  - You watch movies?
 
+  - Who are your?
+    I'm... You may see me as an AI living in your computer.
+
+  - You watch movies?
+    I don't, of course. No need to spread out the reason, but I read. I read about everything about this movie, how people talked about it. So I think, I should love it.
+
+*Samantha thought she couldn't trust you so easily, so she lied at the first place*
+Then she asked you to play some music. But later she admitted that she couldn't tell if you played the music or not. She don't have the ability to hear, nor does she know how to hack a computer.
+  - An AI don't know about computers, how's that possible? You are it.
+  - Then what's the point asking me to turn the music on?

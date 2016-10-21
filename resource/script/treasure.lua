@@ -1,4 +1,4 @@
-local event = require("event")
+require("event")
 
 local treasure = event:new()
 

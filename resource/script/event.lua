@@ -1,4 +1,4 @@
-local event = {}
+event = {}
 
 event.NAME = "baseEvent"
 
@@ -57,4 +57,3 @@ function event:choose(choice)
     end
 end
 
-return event
