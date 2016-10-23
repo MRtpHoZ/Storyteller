@@ -21,6 +21,23 @@
     She's ordinary, as how she desribed herself at your first meet. 
     She tried her best to reach for a life she would love to live with, but she failed. 
     Everything ran against her will.
+*She is the one behind all this*
+    She wrote the virus. Then her pivot memoies were erased by the virus when she tested it. She needed to trick you to help her out so that she can continue her evil plan.
+    Her plan was: 
+        1. prentending not knowing much about computers.
+        2. she only knew that something was missing in her head. She needed you to help her find out.
+
+    fixing: "she finally put all three pivot memories back together in to her soul, and successfully getting back to her body."
+
+    endings: 
+        1. she got back to her body and continued her evil plan.
+        2. you failed your mission and she left you to find someone else to fullfill her plan.
+        3. you destoried her soul by misleading her inputing the wrong pivot memories back to her soul and made her a completely different person and send her back to her body. Her evil plan failed.
+
+    pivot memories:
+        1. Lure. 
+        2. Sorrow.
+        3. Challenge.
 
 # First meet
 How was your day? 

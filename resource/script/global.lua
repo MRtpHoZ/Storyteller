@@ -6,7 +6,7 @@
 package.path = package.path .. ";./resource/script/?.lua"
 
 function log(str)
-    io.write(string.format("LuaLog: %s\n", str))
+    io.write(string.format("STLog: %s\n", str))
 end
 
 log(string.format("Version: %s", _VERSION))
@@ -39,6 +39,6 @@ function choose(choice)
     return currentEvent:choose(choice)
 end
 
-moduleNameList = {"firstMeet"}
+moduleNameList = {"firstMeet", "truth"}
 loadEvents()
 

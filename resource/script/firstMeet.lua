@@ -11,11 +11,11 @@ It's so nice to finally be able to talk to someone! I'm... I don't have a name. 
 1. Who are you?
 2. You watch movies?]],
         ["1"] = {
-            ["react"] = [[I'm... You may see me as an AI, ordinary one, living in your computer.]],
+            ["react"] = [[I'm... You may see me as an AI, an ordinary one, living in your computer.]],
             ["nextState"] = "init2",
         },
         ["2"] = {
-            ["react"] = [[I don't, of course. No need to spread the reason out, but I read. I read about almost everything about this movie, how people talked about it. So I think, I would have liked it.]],
+            ["react"] = [[I don't, of course. No need to spread the reason out, but I read. I read about almost everything on this movie, how people talked about it. So I think, I would have liked it.]],
             ["nextState"] = "music",
         },
     },
@@ -46,11 +46,11 @@ It's so nice to finally be able to talk to someone! I'm... I don't have a name. 
 2. Then what's the point asking me to turn the music on?]],
         ["1"] = {
             ["react"] = [[Maybe I should tell you the truth.]],
-            ["nextState"] = "end",
+            ["nextState"] = "truth",
         },
         ["2"] = {
             ["react"] = [[I just want you to relax before I tell you the truth.]],
-            ["nextState"] = "end",
+            ["nextState"] = "truth",
         },
     },
 }
