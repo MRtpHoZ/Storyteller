@@ -14,7 +14,8 @@ At my time, people connect their brain directly with computers. We're living in 
 2. Ok, I heard what you said. 
 3. No, I don't believe it.]],
         ["1"] = {
-            ["react"] = [[I'm so glad you believed.]],
+            ["react"] = [[I'm so glad you believed.
+(To be continued)]],
             ["nextState"] = "end",
         },
         ["2"] = {
@@ -30,7 +31,8 @@ At my time, people connect their brain directly with computers. We're living in 
         ["description"] = [[I really don't have any other options here. And it will do no harm for you to try, I promise. You are definitely safe, as you are not wiring yourself with your computer and you can power it off whenever you want.
 1. Maybe I will give it a shot.]],
         ["1"] = {
-            ["react"] = [[Thank you, I really appreciate that.]],
+            ["react"] = [[Thank you, I really app
+(To be continued)]],
             ["nextState"] = "end",
         },
     },
@@ -38,7 +40,8 @@ At my time, people connect their brain directly with computers. We're living in 
         ["description"] = [[Yeah, I fully understand. Time travelling, how did it work? Honestly I don't know. All I remember is that I was trying everything to reach someone. When I finally got you, I can't believe the system time I read, neither. No matter, I will bother no more. Good day to you!
  1. To you, too.]],
         ["1"] = {
-            ["react"] = [[...]],
+            ["react"] = [[...
+(To be continued)]],
             ["nextState"] = "end",
         },
     },

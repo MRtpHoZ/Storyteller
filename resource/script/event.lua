@@ -1,3 +1,10 @@
+--[[
+Base class for events.
+Events are single lua files stands for events in the story. 
+Sub classes can override these functions to do custom work like store status variables.
+--]]
+
+
 event = {}
 
 event.NAME = "baseEvent"
