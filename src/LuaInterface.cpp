@@ -8,11 +8,13 @@
 
 #include "LuaInterface.h"
 
+#define SCRIPT_GLOBAL_PATH "./resource/script/global.lua"
+
 LuaInterface* LuaInterface::_instance = nullptr;
 
 LuaInterface::LuaInterface()
 : _state(nullptr) {
-    execute("./resource/script/global.lua");
+    execute(SCRIPT_GLOBAL_PATH);
 }
 
 LuaInterface::~LuaInterface() {
@@ -34,7 +36,7 @@ void LuaInterface::removeInstance() {
     }
 }
 
-void LuaInterface::print_error(lua_State* state) {
+void LuaInterface::printError(lua_State* state) {
     const char* message = lua_tostring(state, -1);
     puts(message);
     lua_pop(state, 1);
@@ -47,13 +49,13 @@ void LuaInterface::execute(const char* filename) {
     
     result = luaL_loadfile(_state, filename);
     if (result != LUA_OK) {
-        print_error(_state);
+        printError(_state);
         return;
     }
     
     result = lua_pcall(_state, 0, LUA_MULTRET, 0);
     if (result != LUA_OK) {
-        print_error(_state);
+        printError(_state);
         return;
     }
 }

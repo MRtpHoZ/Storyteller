@@ -4,26 +4,11 @@ Storyteller is supposed to be a text-based game engine.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* You can write your own story by editing and extending lua files in resource/script/
+* Version: 0.1
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Running make under current directory will do.
+* For XCode users: go to File -> Project Settings -> Advanced, and select Build Location to current directory.
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact

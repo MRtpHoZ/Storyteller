@@ -29,7 +29,7 @@ public:
 
 private:
     void execute(const char* filename);
-    void print_error(lua_State* state);
+    void printError(lua_State* state);
 
     static LuaInterface* _instance;
     lua_State *_state;
