@@ -55,3 +55,6 @@ It's nice to be able to finally talk to someone. I don't have a name. But I just
 Then she asked you to play some music. But later she admitted that she couldn't tell if you played the music or not. She don't have the ability to hear, nor does she know how to hack a computer.
   - An AI don't know about computers, how's that possible? You are it.
   - Then what's the point asking me to turn the music on?
+
+
+
