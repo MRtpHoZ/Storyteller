@@ -1,5 +1,5 @@
 /* Class Storyteller
-    Storyteller manages Scenes and Events.
+    
 */
 
 #ifndef __Storyteller_h__
@@ -12,12 +12,14 @@ public:
     Storyteller();
     ~Storyteller();
 
-    void startStory(); // start a new story.
+    void startStory(); // Start a new story.
 
 private:
-    void describe(string text); // output the description
-    void choose(int choice); // input Player's choice on current situation.
-    
+    void initModules(); // Initialize all the modules it needs.
+    void cleanUp(); // Remove modules loaded and deallocate memories.
+
+    void describe(string text); // Print the description of current situation and the choices to it.
+    void choose(int choice); // Input Player's choice.
 };
 
 #endif

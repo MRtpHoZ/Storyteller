@@ -1,13 +1,9 @@
-//
-//  LuaInterface.h
-//  Storyteller
-//
-//  Created by Dexter on 17/10/2016.
-//
-//
+/*
+    LuaInterface.h
+*/
 
-#ifndef LuaInterface_h
-#define LuaInterface_h
+#ifndef __LuaInterface_h__
+#define __LuaInterface_h__
 
 #include "../lua/include/lua.hpp"
 #include "common.h"
@@ -20,11 +16,17 @@ public:
     static LuaInterface* getInstance();
     static void removeInstance();
     
+    // Access global variable in Lua State.
     void addGlobalVariable(const char *variableName, lua_Number n);
     lua_Number getGlobalVariable(const char *variableName);
     
+    // return current description.
     string describeCurrentState();
+
+    // return if the story is end.
     bool isStoryEnd();
+
+    // pass player's choice and return reaction as string.
     string choose(int choice);
 
 private:
@@ -35,4 +37,4 @@ private:
     lua_State *_state;
 };
 
-#endif /* LuaInterface_h */
+#endif /* __LuaInterface_h__ */

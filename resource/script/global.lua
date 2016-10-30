@@ -27,12 +27,14 @@ function describeCurrentState()
 end
 
 function isStoryEnd()
-    if currentEvent:nextModuleName() == "end" then
+    currentEvent = moduleList[currentEvent:nextModuleName()]
+    
+    if currentEvent == nil then
+        -- Story ends when the next module name is not in moduleList.
         return true
     else
-        currentEvent = moduleList[currentEvent:nextModuleName()]
+        return false
     end
-    return false
 end
 
 function choose(choice)

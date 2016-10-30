@@ -31,7 +31,7 @@ At my time, people connect their brain directly with computers. We're living in 
         ["description"] = [[I really don't have any other options here. And it will do no harm for you to try, I promise. You are definitely safe, as you are not wiring yourself with your computer and you can power it off whenever you want.
 1. Maybe I will give it a shot.]],
         ["1"] = {
-            ["react"] = [[Thank you, I really app
+            ["react"] = [[Thank you, I really appraciate that!
 (To be continued)]],
             ["nextState"] = "end",
         },
