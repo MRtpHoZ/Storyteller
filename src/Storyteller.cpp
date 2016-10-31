@@ -1,3 +1,7 @@
+/*
+    Storyteller
+ */
+
 #include "Storyteller.h"
 #include "LuaInterface.h"
 
@@ -24,7 +28,7 @@ void Storyteller::startStory() {
     do {
         // Print the description from LuaInterface.
         describe(LuaInterface::getInstance()->describeCurrentState());
-        
+
         // Ask for player's choice.
         int ret;
         cout << "Your choice: ";
@@ -35,7 +39,7 @@ void Storyteller::startStory() {
         puts("");
 
     } while (!LuaInterface::getInstance()->isStoryEnd()); // Loops until the story ends.
-    
+
     puts("Story ends here.");
     cleanUp();
 }

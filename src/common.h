@@ -6,4 +6,4 @@
 using namespace std;
 
 
-#endif
+#endif /*__common_h__*/

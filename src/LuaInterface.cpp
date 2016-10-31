@@ -1,10 +1,7 @@
-//
-//  LuaInterface.cpp
-//  Storyteller
-//
-//  Created by Dexter on 17/10/2016.
-//
-//
+/*
+    LuaInterface.cpp
+    Storyteller
+*/
 
 #include "LuaInterface.h"
 
@@ -46,13 +43,13 @@ void LuaInterface::execute(const char* filename) {
     _state = luaL_newstate();
     luaL_openlibs(_state);
     int result;
-    
+
     result = luaL_loadfile(_state, filename);
     if (result != LUA_OK) {
         printError(_state);
         return;
     }
-    
+
     result = lua_pcall(_state, 0, LUA_MULTRET, 0);
     if (result != LUA_OK) {
         printError(_state);

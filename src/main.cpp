@@ -1,4 +1,6 @@
-// main.cpp
+/*
+    main.cpp
+ */
 
 #include "Storyteller.h"
 

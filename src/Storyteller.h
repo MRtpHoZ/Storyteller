@@ -1,5 +1,5 @@
-/* Class Storyteller
-    
+/*
+    Class Storyteller
 */
 
 #ifndef __Storyteller_h__
@@ -12,14 +12,33 @@ public:
     Storyteller();
     ~Storyteller();
 
-    void startStory(); // Start a new story.
+    /**
+     * Start the main loop of a new story.
+     */
+    void startStory();
 
 private:
-    void initModules(); // Initialize all the modules it needs.
-    void cleanUp(); // Remove modules loaded and deallocate memories.
+    /**
+     * Initialize all the modules needed, making sure they are in the right order.
+     */
+    void initModules();
 
-    void describe(string text); // Print the description of current situation and the choices to it.
-    void choose(int choice); // Input Player's choice.
+    /**
+     * Remove modules loaded and deallocate memory.
+     */
+    void cleanUp();
+
+    /**
+     * Output the description, which consists of dialogs, narratives and choices.
+     * @param text string, description
+     */
+    void describe(string text);
+
+    /**
+     * Pass player's choice
+     * @param choice int, player's choice.
+     */
+    void choose(int choice);
 };
 
 #endif
