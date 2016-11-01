@@ -1,3 +1,5 @@
+#SPOILER ALERT
+
 ## Samantha is a human soul stuck in your computer.
 
 **Rewrite: How it works?**
