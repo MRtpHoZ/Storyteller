@@ -9,6 +9,5 @@ Storyteller is supposed to be a text-based game engine.
 
 ### How do I get set up? ###
 
-* Running make under current directory will do.
+* Run `make` under current directory will do.
 * For XCode users: go to File -> Project Settings -> Advanced, and select Build Location to current directory.
-
